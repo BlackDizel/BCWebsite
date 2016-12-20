@@ -1,0 +1,65 @@
+.project:first-child
+{
+    margin-top: 0;
+}
+
+.project
+{
+    width: 100%;
+    height: auto;
+    margin-top: 7.5%;
+}
+
+.project_img
+{
+    width: 100%;
+
+    text-align: center;
+}
+
+.project_img div
+{
+    display: inline-block;
+
+    width: 30%;
+    margin-right: 4%;
+
+    vertical-align: top;
+}
+
+@media (max-width: 800px) and (min-width: 400px){
+    .project_img div
+    {
+        width: 28%;
+    }   
+}
+
+
+.project_img div:last-child
+{
+    margin-right: 0;
+}
+
+.project_img img
+{
+    width: 100%;
+}
+
+.project_text h2
+{
+    margin-right: 50px;
+}
+
+.platform a
+{
+    font-size: .5em;
+
+    margin-right: 10px;
+    padding: 5px;
+
+    vertical-align: middle;
+
+    color: #fff;
+    border-radius: 2px;
+    background-color: #c3c6c1;
+}

@@ -1,0 +1,25 @@
+.post{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a{
+	color: inherit;
+}
+.view{
+	color: #ccc;
+}
+.view a:visited{
+	color: blue;
+}
+
+.post_span{
+	font-size: 0.8em;
+}
+.cont>p{
+	line-height: 5em;
+	text-align: center;
+	font-size: 2em;
+	color: #ccc;
+}

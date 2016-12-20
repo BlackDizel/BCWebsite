@@ -1,0 +1,334 @@
+.header{
+	animation: pulse 5s infinite;
+	
+	-webkit-animation: pulse 5s infinite;
+	
+	-moz-animation: pulse 5s infinite;
+
+	-o-animation: pulse 5s infinite;
+
+	-ms-animation: pulse 5s infinite;
+}
+
+@keyframes pulse{
+	4%  { transform: scale(0.9);}
+	8% { transform: scale(1.01);}
+	12% { transform: scale(0.95);}
+	16% { transform: scale(1.01);}
+	20% { transform: scale(1);}
+	100%{ transform: scale(1);}
+}
+
+@-webkit-keyframes pulse{
+	4%  { -webkit-transform: scale(1); transform: scale(1);}
+	8% { -webkit-transform: scale(1.03); transform: scale(1.03);}
+	12% { -webkit-transform: scale(1); transform: scale(1);}
+	16% { -webkit-transform: scale(1.03); transform: scale(1.03);}
+	20% { -webkit-transform: scale(1); transform: scale(1);}
+	100%{-webkit-transform: scale(1); transform: scale(1);}
+}
+
+@-moz-keyframes pulse{
+	4%  { -moz-transform: scale(1); transform: scale(1);}
+	8%  { -moz-transform: scale(1.03); transform: scale(1.03);}
+	12% { -moz-transform: scale(1); transform: scale(1);}
+	16% { -moz-transform: scale(1.03); transform: scale(1.03);}
+	20% { -moz-transform: scale(1); transform: scale(1);}
+	100%{ -moz-transform: scale(1); transform: scale(1);}
+}
+
+@-o-keyframes pulse{
+	4%  { -o-transform: scale(1); transform: scale(1);}
+	8%  { -o-transform: scale(1.03); transform: scale(1.03);}
+	12% { -o-transform: scale(1); transform: scale(1);}
+	16% { -o-transform: scale(1.03); transform: scale(1.03);}
+	20% { -o-transform: scale(1); transform: scale(1);}
+	100%{ -o-transform: scale(1); transform: scale(1);}
+}
+
+@-ms-keyframes pulse{
+	4%  { -ms-transform: scale(1); transform: scale(1);}
+	8%  { -ms-transform: scale(1.03); transform: scale(1.03);}
+	12% { -ms-transform: scale(1); transform: scale(1);}
+	16% { -ms-transform: scale(1.03); transform: scale(1.03);}
+	20% { -ms-transform: scale(1); transform: scale(1);}
+	100%{ -ms-transform: scale(1); transform: scale(1);}
+}
+
+
+.line{
+	animation: line-left 0.3s;
+	-webkit-animation: line-left 0.3s;
+	-moz-animation: line-left 0.3s;
+	-ms-animation: line-left 0.3s;
+	-o-animation: line-left 0.3s;
+
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-out;
+	-o-animation-timing-function: ease-out;
+	-ms-animation-timing-function: ease-out;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+
+@keyframes line-left{
+	100% { left: 0%; width: auto;}}
+@-webkit-keyframes line-left{
+	100% { left: 0%; width: auto;}}
+@-moz-keyframes line-left{
+	100% { left: 0%; width: auto;}}
+@-o-keyframes line-left{
+	100% { left: -1%; width: 145px;}}
+@-ms-keyframes line-left{
+	100% { left: -1%; width: 145px;}}
+
+
+.line_r {
+	animation: line_r 0.3s;
+	-webkit-animation: line_r 0.3s;
+	-moz-animation: line_r 0.3s;
+	-ms-animation: line_r 0.3s;
+	-o-animation: line_r 0.3s;
+
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-out;
+	-o-animation-timing-function: ease-out;
+	-ms-animation-timing-function: ease-out;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;}
+
+@keyframes line_r{
+	100% { left: 0%; width: auto;}}
+@-webkit-keyframes line_r{
+	100% { left: 0%; width: auto;}}
+@-moz-keyframes line_r{
+	100% { left: 0%; width: auto;}}
+@-o-keyframes line_r{
+	100% { left: 0%; width: 153px;}}
+@-ms-keyframes line_r{
+	100% { left: 0%; width: 153px;}}
+
+
+.anm:hover{
+	text-decoration: none;
+	border-bottom: #FFF 3px solid;
+		
+	animation: menu 1s;
+	-webkit-animation: menu 1s;
+	-moz-animation: menu 1s;
+	-ms-animation: menu 1s;
+	-o-animation: menu 1s;
+	
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+
+@keyframes menu{
+	from {color:#CCC;}
+	to {color:#000;}
+}
+
+@-webkit-keyframes menu{
+	from {color:#CCC;}
+	to {color:#000;}
+}
+
+@-moz-keyframes menu{
+	from {color:#CCC;}
+	to {color:#000; }
+}
+
+@-o-keyframes menu{
+	from {color:#CCC;}
+	to {color:#000;}
+}
+
+@-ms-keyframes menu{
+	from {color:#CCC;}
+	to {color:#000;}
+}
+
+.wp:hover{
+	animation: wp 0.25s;
+	-webkit-animation: wp 0.25s;
+	-moz-animation: wp  0.25s;
+	-ms-animation: wp 0.25s;
+	-o-animation: wp 0.25s;
+	
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+@keyframes wp{
+	from {background-color:#ccc;}
+		to {background-color: #3f51b5;}}
+@-webkit-keyframes wp{
+	from {background-color:#ccc;}
+		to {background-color: #3f51b5;}}
+@-moz-keyframes wp{
+	from {background-color:#ccc;}
+		to {background-color: #3f51b5;}}
+@-o-keyframes wp{
+	from {background-color:#ccc;}
+		to {background-color: #3f51b5;}}
+@-ms-keyframes wp{
+	from {background-color:#ccc;}
+		to {background-color: #3f51b5;}}
+
+.android:hover{
+	animation: android 0.25s;
+	-webkit-animation: android 0.25s;
+	-moz-animation: android  0.25s;
+	-ms-animation: android 0.25s;
+	-o-animation: android 0.25s;
+	
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+@keyframes android{
+	from {background-color:#ccc;}
+		to {background-color:#4caf50;}}
+@-webkit-keyframes android{
+	from {background-color:#ccc;}
+		to {background-color:#4caf50;}}
+@-moz-keyframes android{
+	from {background-color:#ccc;}
+		to {background-color:#4caf50;}}
+@-o-keyframes android{
+	from {background-color:#ccc;}
+		to {background-color:#4caf50;}}
+@-ms-keyframes android{
+	from {background-color:#ccc;}
+		to {background-color:#4caf50;}}
+
+.tizen:hover{
+	animation: tizen 0.25s;
+	-webkit-animation: tizen 0.25s;
+	-moz-animation: tizen  0.25s;
+	-ms-animation: tizen 0.25s;
+	-o-animation: tizen 0.25s;
+	
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+@keyframes tizen{
+	from {background-color:#ccc;}
+		to {background-color:#6cc;}}
+@-webkit-keyframes tizen{
+	from {background-color:#ccc;}
+		to {background-color:#6cc;}}
+@-moz-keyframes tizen{
+	from {background-color:#ccc;}
+		to {background-color:#6cc;}}
+@-o-keyframes tizen{
+	from {background-color:#ccc;}
+		to {background-color:#6cc;}}
+@-ms-keyframes tizen{
+	from {background-color:#ccc;}
+		to {background-color:#6cc;}}
+
+#vk:hover{
+	animation: vk 0.25s;
+	-webkit-animation: vk 0.25s;
+	-moz-animation: vk  0.25s;
+	-ms-animation: vk 0.25s;
+	-o-animation: vk 0.25s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+@keyframes vk{
+	from {background-color:#e8e8e8;}
+		to {background-color:#009;}}
+@-webkit-keyframes vk{
+	from {background-color:#e8e8e8;}
+		to {background-color:#009;}}
+@-moz-keyframes vk{
+	from {background-color:#e8e8e8;}
+		to {background-color:#009;}}
+@-o-keyframes vk{
+	from {background-color:#e8e8e8;}
+		to {background-color:#009;}}
+@-ms-keyframes vk{
+	from {background-color:#e8e8e8;}
+		to {background-color:#009;}}
+
+
+#fb:hover{
+	animation: fb 0.25s;
+	-webkit-animation: fb 0.25s;
+	-moz-animation: fb  0.25s;
+	-ms-animation: fb 0.25s;
+	-o-animation: fb 0.25s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+@keyframes fb{
+	from {background-color:#e8e8e8;}
+		to {background-color:#03F;}}
+@-webkit-keyframes fb{
+	from {background-color:#e8e8e8;}
+		to {background-color:#03F;}}
+@-moz-keyframes fb{
+	from {background-color:#e8e8e8;}
+		to {background-color:#03F;}}
+@-o-keyframes fb{
+	from {background-color:#e8e8e8;}
+		to {background-color:#03F;}}
+@-ms-keyframes fb{
+	from {background-color:#e8e8e8;}
+		to {background-color:#03F;}}
+
+#tw:hover{
+	animation: tw 0.25s;
+	-webkit-animation: tw 0.25s;
+	-moz-animation: tw  0.25s;
+	-ms-animation: tw 0.25s;
+	-o-animation: tw 0.25s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+@keyframes tw{
+	from {background-color:#e8e8e8;}
+		to {background-color:#09F;}}
+@-webkit-keyframes tw{
+	from {background-color:#e8e8e8;}
+		to {background-color:#09F;}}
+@-moz-keyframes tw{
+	from {background-color:#e8e8e8;}
+		to {background-color:#09F;}}
+@-o-keyframes tw{
+	from {background-color:#e8e8e8;}
+		to {background-color:#09F;}}
+@-ms-keyframes tw{
+	from {background-color:#e8e8e8;}
+		to {background-color:#09F;}}

@@ -1,0 +1,113 @@
+@charset 'utf-8';
+
+body
+{
+    font-family: 'Myriad Pro', sans-serif;
+
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header
+{
+    position: static;
+    z-index: 2;
+
+    height: auto;
+
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a img
+{
+    text-decoration: none;
+
+    border: none;
+}
+
+.menu p
+{
+    text-align: center;
+}
+
+.menu
+{
+    position: relative;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+    margin: 1% auto;
+
+    list-style-type: none;
+}
+
+.menu > ul
+{
+    position: relative;
+    left: 50%;
+
+    float: left;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.menu > ul > li
+{
+    font-size: 38px;
+
+    position: relative;
+    left: -50%;
+
+    float: left;
+
+    padding: 5px 30px;
+
+    color: rgb(204, 204, 204);
+}
+
+.menu > ul > li > a
+{
+    text-decoration: none;
+
+    color: rgb(204, 204, 204);
+    border-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 800px) and (min-width: 400px)
+{
+    .menu p
+    {
+        font-size: .5em;
+    }
+
+    .menu > ul > li
+    {
+        font-size: 1em;
+    }
+
+    h2
+    {
+        font-size: 1em !important;
+    }
+
+    p
+    {
+        font-size: .6em;
+    }
+}
+
+.cont
+{
+    width: 70%;
+    margin: 3% auto;
+}
