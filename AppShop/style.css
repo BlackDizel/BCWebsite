@@ -1,7 +1,7 @@
 html, body{
 	min-width: 1800px;
 }
-.page_content{
+.header, .page_content{
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
@@ -10,8 +10,12 @@ html, body{
 	clear: both;
 	height: 450px;
 }
+.header{
+	text-align: center;
+	height: 200px;
+}
 .page_content div{
-	width: 40%;
+	width: 50%;
 	position: relative;
 	float: left;
 }
@@ -26,7 +30,10 @@ html, body{
 	margin-left: 10px;
 }
 .page_content__text{
-	margin-left: 5%;
+}
+a{
+	text-decoration: none;
+	color: inherit;
 }
 h1{
 	font-variant: small-caps;
