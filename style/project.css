@@ -27,14 +27,13 @@
     vertical-align: top;
 }
 
-@media (max-width: 800px) and (min-width: 400px){
+@media (max-width: 800px) and (min-width: 400px)
+{
     .project_img div
     {
         width: 28%;
-    }   
+    }
 }
-
-
 .project_img div:last-child
 {
     margin-right: 0;
@@ -62,4 +61,31 @@
     color: #fff;
     border-radius: 2px;
     background-color: #c3c6c1;
+}
+.project_img_two_h div
+{
+    width: 48%;
+}
+.project_img_two_h div:first-child
+{
+    float: left;
+}
+.project_img_two_h div:last-child
+{
+    float: right;
+}
+.project_img_two_h:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '';
+}
+
+.project_img_one_h div
+{
+    width: 100%;
 }
