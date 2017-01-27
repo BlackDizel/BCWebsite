@@ -62,6 +62,12 @@
     border-radius: 2px;
     background-color: #c3c6c1;
 }
+.web{
+}
+.web:visited,
+.web:active {
+    color: blue;
+}
 .project_img_two_h div
 {
     width: 48%;

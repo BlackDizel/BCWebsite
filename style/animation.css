@@ -247,7 +247,6 @@
 @-ms-keyframes tizen{
 	from {background-color:#ccc;}
 		to {background-color:#6cc;}}
-
 #vk:hover{
 	animation: vk 0.25s;
 	-webkit-animation: vk 0.25s;

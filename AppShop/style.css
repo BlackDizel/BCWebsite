@@ -1,7 +1,7 @@
 html, body{
 	min-width: 1800px;
 }
-.header, .page_content{
+.back, .header, .page_content{
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
@@ -9,6 +9,11 @@ html, body{
 	position: relative;
 	clear: both;
 	height: 450px;
+}
+.back{
+	text-align: center;
+	margin-top: 50px;
+	height: 50px;
 }
 .header{
 	text-align: center;
