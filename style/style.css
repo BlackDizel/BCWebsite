@@ -18,7 +18,9 @@ body
 
     text-align: center;
 }
-
+p{
+    line-height: 1.5em
+}
 a
 {
     text-decoration: none;

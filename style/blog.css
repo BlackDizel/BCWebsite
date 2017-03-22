@@ -4,22 +4,6 @@
 	margin-left: auto;
 }
 
-a{
-	color: inherit;
-}
-.view{
-	color: #ccc;
-}
-.view a:visited{
-	color: blue;
-}
-
-.post_span{
-	font-size: 0.8em;
-}
-.cont>p{
-	line-height: 5em;
-	text-align: center;
-	font-size: 2em;
-	color: #ccc;
+.cont__post p, .cont__post h1{
+	margin: 10px 0;
 }
