@@ -5,6 +5,7 @@ body
     font-family: 'Myriad Pro', sans-serif;
 
     max-width: 1300px;
+    min-width: 650px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -85,28 +86,6 @@ a img
     border-color: rgb(255, 255, 255);
 }
 
-@media (max-width: 800px) and (min-width: 400px)
-{
-    .menu p
-    {
-        font-size: .5em;
-    }
-
-    .menu > ul > li
-    {
-        font-size: 1em;
-    }
-
-    h2
-    {
-        font-size: 1em !important;
-    }
-
-    p
-    {
-        font-size: .6em;
-    }
-}
 
 .cont
 {
