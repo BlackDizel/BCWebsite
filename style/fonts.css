@@ -2,11 +2,12 @@
 /* CSS Document */
 
 @font-face {
-	font-family: Myriad Pro, sans-serif;
-	src: url("fonts/Myriad_Pro.eot#") format("eot");
-	src: local('Myriad Pro'), url("fonts/Myriad_Pro.otf") format("opentype");
-	src:url("fonts/Myriad_Pro.ttf") format("truetype");
-	src:url("fonts/Myriad_Pro.woff") format ("woff");
+	font-family: 'Myriad Pro';
+	
+	src: local('Myriad Pro'), url("../fonts/Myriad_Pro.eot#") format("eot");
+	src: local('Myriad Pro'), url("../fonts/Myriad_Pro.otf") format("opentype");
+	src: local('Myriad Pro'), url("../fonts/Myriad_Pro.ttf") format("truetype");
+	src: local('Myriad Pro'), url("../fonts/Myriad_Pro.woff") format ("woff");
 }
 
-form {	font-family: Myriad Pro, sans-serif;}
+form {	font-family: 'Myriad Pro', sans-serif;}

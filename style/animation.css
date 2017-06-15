@@ -55,70 +55,6 @@
 	100%{ -ms-transform: scale(1); transform: scale(1);}
 }
 
-
-.line{
-	animation: line-left 0.3s;
-	-webkit-animation: line-left 0.3s;
-	-moz-animation: line-left 0.3s;
-	-ms-animation: line-left 0.3s;
-	-o-animation: line-left 0.3s;
-
-	animation-timing-function: ease-out;
-	-webkit-animation-timing-function: ease-out;
-	-moz-animation-timing-function: ease-out;
-	-o-animation-timing-function: ease-out;
-	-ms-animation-timing-function: ease-out;
-
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	-o-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-}
-
-@keyframes line-left{
-	100% { left: 0%; width: auto;}}
-@-webkit-keyframes line-left{
-	100% { left: 0%; width: auto;}}
-@-moz-keyframes line-left{
-	100% { left: 0%; width: auto;}}
-@-o-keyframes line-left{
-	100% { left: -1%; width: 145px;}}
-@-ms-keyframes line-left{
-	100% { left: -1%; width: 145px;}}
-
-
-.line_r {
-	animation: line_r 0.3s;
-	-webkit-animation: line_r 0.3s;
-	-moz-animation: line_r 0.3s;
-	-ms-animation: line_r 0.3s;
-	-o-animation: line_r 0.3s;
-
-	animation-timing-function: ease-out;
-	-webkit-animation-timing-function: ease-out;
-	-moz-animation-timing-function: ease-out;
-	-o-animation-timing-function: ease-out;
-	-ms-animation-timing-function: ease-out;
-
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	-o-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;}
-
-@keyframes line_r{
-	100% { left: 0%; width: auto;}}
-@-webkit-keyframes line_r{
-	100% { left: 0%; width: auto;}}
-@-moz-keyframes line_r{
-	100% { left: 0%; width: auto;}}
-@-o-keyframes line_r{
-	100% { left: 0%; width: 153px;}}
-@-ms-keyframes line_r{
-	100% { left: 0%; width: 153px;}}
-
-
 .anm:hover{
 	text-decoration: none;
 	border-bottom: #FFF 3px solid;
@@ -247,6 +183,7 @@
 @-ms-keyframes tizen{
 	from {background-color:#ccc;}
 		to {background-color:#6cc;}}
+		
 #vk:hover{
 	animation: vk 0.25s;
 	-webkit-animation: vk 0.25s;
@@ -288,6 +225,7 @@
 	-o-animation-fill-mode: forwards;
 	-ms-animation-fill-mode: forwards;
 }
+
 @keyframes fb{
 	from {background-color:#e8e8e8;}
 		to {background-color:#03F;}}
