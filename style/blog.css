@@ -3,7 +3,9 @@
 	margin-right: auto;
 	margin-left: auto;
 }
-
+.cont__post{
+	margin-bottom: 50px;
+}
 .cont__post p, .cont__post h1{
 	margin: 10px 0;
 }
