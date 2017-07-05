@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+    
+    <link href="../style/blog.css" rel="stylesheet" />
+    <link href="../style/style.css" rel="stylesheet" />
+    <link href="../style/animation.css" rel="stylesheet" />
+    <link href="../style/fonts.css" rel="stylesheet" />
+    <link href="../icon.png" rel="shortcut icon" type="../image/png" />
+
+
+      <title>Блог</title>
+</head>
+<body>
+
+    <div class="header">
+        <a href="http://www.byters.org"><img src="../image/logo.png" alt="logo_byters"/></a>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="http://www.byters.org" class="anm">проекты</a>
+            </li>
+            <li>
+                <a href="../blog.html" style="color:#000;">блог</a>
+            </li>
+            <li>
+                <a href="../contact.html" class="anm" >контакты</a>
+            </li>
+        </ul>
+    </div>
+      
+    <div class="cont">
+        <div class="post">
+            <h1>Как отдать дизайн android-разработчику</h1>
+
+            <p>В мобильной разработке существует несколько типичных ошибок при передаче дизайн-макетов разработчику. Доходит до того, что макеты нередко передаются в устаревшем PSD формате, заставляя разработчика "ползать" с пипеткой. Для оптимизации процесса внедрения нового дизайна был написан гайд для внутреннего использования и в итоге перенесен сюда.</p>
+
+            <p>В общем случае дизайн должен лежать в <a href = "https://zeplin.io" target="_blank">zeplin</a> проекте (или аналогичном онлайн сервисе). Все элементы должны иметь читаемые в веб-интерфейсе отступы (желательно кратные 4). Изображения должны быть доступны для экспорта.</p>
+
+            <p>В дизайне alpha не должна быть использована для отображения цвета элемента. Например, если вам нужен серый текст, он не должен быть цвета #55000000, а должен быть указан без прозрачности, например #dddddd</p>
+
+            <a href="https://material.io/guidelines" target="_blank">Официальные гайды по Material-дизайну</a>
+
+            <h2>Стили текста</h2>
+
+            <p>Крайне желательно использовать стили текста из <a href="https://material.io/guidelines/style/typography.html#typography-typeface" target="_blank">стандартного набора</a>. Все дополнительные стили должны быть описаны отдельным документом. В дизайне все надписи должны принадлежать одному из стилей. Возможно наследование стилей.</p>
+
+            <p>Код неразрывного пробела \u00A0</p>
+
+            <h2>Изображения</h2>
+
+            <p>начиная с android 5, иконка push notification в status bar должна быть однотонной белой в png формате. форма задается alpha 0.</p>
+
+            <p>Предположим, нам надо добавить в приложение изображение. Изображение может быть векторное или растровое.</p>
+
+            <h3>Векторное</h3>
+
+            <p>Андроид не поддерживает svg в чистом виде, Необходимо конвертировать во внутренний формат android vector drawable. Есть <a href = "http://inloop.github.io/svg2android/" target="_blank">неофициальный конвертер</a> svg файлов в android vector drawable. Работает лучше официального, но не в 100% случаях, поэтому необходимо тестирование для каждого отдельного случая.</p>
+
+            <p>Векторные одноцветные белые иконки могут быть покрашены в необходимый цвет в коде через xml аттрибут tint или colorFilter в коде.</p>
+
+            <p>также доступен <a href="https://material.io/icons/" target="_blank">стандартный набор</a> векторных изображений от Google. При их использовании необходимо сохранять в дизайне оригинальное название изображения.</p>
+            
+            <a href="https://developer.android.com/studio/write/vector-asset-studio.html" target="_blank">Интерфейс библиотеки стандартных векторных изображений в Android Studio</a>
+
+            <h3>Растровое</h3>
+
+            <p>Для разных разрешений экрана нужны изображения разного размера. Поэтому в приложении хранятся дубликаты одних и тех же изображений для разных разрешений экрана.</p>
+
+            <p>Множители разрешений изображений:</p>
+            <ul>
+            <li>mdpi — 1x</li>
+            <li>hdpi — 1.5x</li>
+            <li>xhdpi — 2x</li>
+            <li>xxhdpi — 3x</li>
+            <li>xxxhdpi — 4x</li>
+            </ul>
+
+            <p>Это значит, что если в исходном дизайне у нас изображение image.png размером 100x100 пикселей, то нам нужны изображения 100x100 для mdpi, 150x150 для hdpi, 200x200 для xhdpi, 300x300 для xxhdpi, 400x400 для xxxhdpi.</p>
+
+            <a href="https://developer.android.com/guide/practices/screens_support.html" target="_blank">Подробная статья о поддержке разных размеров экранов в официальной документации</a>
+
+            <p>Передавать эти изображения надо в архиве с следующей структурой:</p>
+
+            <p><img src="./assets/folder_structure.png" alt="структура файлов"></p>
+            <a href="./assets/folder_structure.svg">оригинальное изображение</a>
+
+            <p>Все png изображения обязательно прогонять через <a href="http://tinypng.com/" target="_blank">TinyPng</a>.</p>
+
+            <a href="http://jennift.com/dpical.html">DPI калькулятор</a>
+
+            <h3>Иконка приложения</h3>
+
+            <p>достаточно png файла 192x192. Android studio может нарезать во все необходимые размеры. Необходимо учитывать, что начиная с android 7, иконки должны быть в том числе круглые.</p>
+
+            <h2>Ссылки</h2>
+            <ul>
+            <li><a href="https://habrahabr.ru/company/rambler-co/blog/256397/" target="_blank">Гайд Рамблера по IOS</a></li>
+            <li><a href="https://habrahabr.ru/post/183836/" target="_blank">Статья пользователя 30PP0 про интеграцию android дизайна</a></li>
+            <li><a href="https://habrahabr.ru/post/184654/" target="_blank">Статья пользователя 30PP0 про интеграцию IOS и Windows Phone дизайна</a></li>
+            <li><a href="https://habrahabr.ru/company/e-Legion/blog/264671/" target="_blank">Опыт e-Legion по подготовке IOS дизайна</a></li>
+            <li><a href="https://habrahabr.ru/company/e-Legion/blog/263303/" target="_blank">Опыт e-Legion по подготовке Android дизайна</a></li>
+            </ul>
+            
+            <p>Дата: <span class="post_span">2017.07.05</span></p>
+        </div>
+    </div>
+</body>
+</html>
