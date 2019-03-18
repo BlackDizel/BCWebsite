@@ -4,10 +4,9 @@ body
 {
     font-family: 'Myriad Pro', sans-serif;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1 em;
     
     max-width: 1300px;
-    min-width: 650px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -50,7 +49,7 @@ a img
     list-style-type: none;
 }
 
-.menu > ul
+.menu ul
 {
     position: relative;
     left: 50%;
@@ -63,9 +62,9 @@ a img
     list-style: none;
 }
 
-.menu > ul > li
+.menu li
 {
-    font-size: 38px;
+    font-size: 2.5em;
 
     position: relative;
     left: -50%;
@@ -77,7 +76,7 @@ a img
     color: rgb(204, 204, 204);
 }
 
-.menu > ul > li > a
+.menu li > a
 {
     text-decoration: none;
 
@@ -90,4 +89,18 @@ a img
 {
     width: 70%;
     margin: 3% auto;
+}
+
+@media  (max-width: 600px)
+{
+    .header,
+    .menu
+    {
+        font-size: 1.2 em;
+
+        text-align: center;
+    }
+    .menu li{
+        font-size: 1.3em;
+    }
 }
