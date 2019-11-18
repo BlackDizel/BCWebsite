@@ -95,3 +95,11 @@
 {
     width: 100%;
 }
+
+.date_work{
+    font-style: italic;
+}
+
+.date_work:first-letter {
+    text-transform: capitalize;
+}
